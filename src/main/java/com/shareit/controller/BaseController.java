@@ -29,9 +29,6 @@ public class BaseController {
 	        
 	        Donator customer = new Donator("Visitha", 28);
 	        donatorDAO.insert(customer);
-	        
-	        Donator donator = new Donator("Buddhiprabha", 25);
-	        donatorDAO.insert(donator);
 	 
 	        Donator customer1 = donatorDAO.findByCustomerId(1);
 	        System.out.println(customer1.getName());
